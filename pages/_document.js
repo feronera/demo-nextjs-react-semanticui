@@ -16,7 +16,10 @@ export default class IntlDocument extends Document {
     return (
       <html>
         <Head>
+          {/* Add stylesheet with all pages */}
           <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.11/semantic.min.css" />
+          {/* Add static font */}
+          <link rel='stylesheet' href='/static/fonts/font-test.ttf?family=font-test' />
         </Head>
         <body>
           <Main />
