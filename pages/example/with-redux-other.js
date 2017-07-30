@@ -4,11 +4,10 @@ import { initStore, startClock, addCount, serverRenderClock } from '../../store/
 import withRedux from 'next-redux-wrapper'
 import Page from '../../components/clock/Page'
 
-class WithRedux extends React.Component {
+class Counter extends React.Component {
   static getInitialProps ({ store, isServer }) {
     store.dispatch(serverRenderClock(isServer))
     store.dispatch(addCount())
-
     return { isServer }
   }
 
@@ -16,13 +15,9 @@ class WithRedux extends React.Component {
     this.timer = this.props.startClock()
   }
 
-  componentWillUnmount () {
-    clearInterval(this.timer)
-  }
-
   render () {
     return (
-      <Page title='Index Page' linkTo='/example/with-redux-other' />
+      <Page title='Other Page' linkTo='/example/with-redux' />
     )
   }
 }
@@ -34,4 +29,4 @@ const mapDispatchToProps = (dispatch) => {
   }
 }
 
-export default withRedux(initStore, null, mapDispatchToProps)(WithRedux)
+export default withRedux(initStore, null, mapDispatchToProps)(Counter)
