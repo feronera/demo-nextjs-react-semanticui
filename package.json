@@ -26,6 +26,7 @@
     "next-redux-wrapper": "^1.1.2",
     "next-routes": "^1.0.24",
     "node-sass": "^4.5.2",
+    "nodemon": "^1.11.0",
     "postcss-loader": "^2.0.5",
     "raw-loader": "^0.5.1",
     "react": "^15.5.4",
