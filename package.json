@@ -1,0 +1,20 @@
+{
+  "name": "test-nextjs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "isomorphic-fetch": "^2.2.1",
+    "lodash": "^4.17.4",
+    "next": "beta",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "semantic-ui-css": "^2.2.11",
+    "semantic-ui-react": "^0.71.3"
+  }
+}
