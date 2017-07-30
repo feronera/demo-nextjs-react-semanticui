@@ -1,6 +1,9 @@
 {
   "presets": [
-    "next/babel"
+    "next/babel",
+    "es2015",
+    "es2017",
+    "stage-0"
   ],
   "plugins": [
     ["babel-plugin-root-import", [
