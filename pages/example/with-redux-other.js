@@ -2,7 +2,7 @@ import React from 'react'
 import { bindActionCreators } from 'redux'
 import { initStore, startClock, addCount, serverRenderClock } from '../../store/example-store'
 import withRedux from 'next-redux-wrapper'
-import Page from '../../components/clock/Page'
+import Page from '@/components/Clock/Page'
 
 class Counter extends React.Component {
   static getInitialProps ({ store, isServer }) {

@@ -1,6 +1,6 @@
 import Head from "next/head";
 import React from "react";
-import ExampleButton from "../../components/example/ExampleButton"
+import ExampleButton from "../../components/Example/ExampleButton"
 
 import mockData from "../../mocks/example/data.json";
 
